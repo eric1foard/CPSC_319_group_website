@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   resources :static_pages
   get 'resources' => 'static_pages#resources'
 
+  get 'team' => 'static_pages#team'
+
   #get 'static_pages/project'
   get 'project' => 'static_pages#project'
 
