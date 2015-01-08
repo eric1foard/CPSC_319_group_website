@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'members/new'
+  
+
+  get 'members/edit'
+
+  get 'members' => 'members#index'
+
   resources :static_pages
   get 'resources' => 'static_pages#resources'
 
